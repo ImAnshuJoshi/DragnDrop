@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wholeContainer">
+      <div>
+        <button class="resetBtn">Reset</button>
+      </div>
+      <div class="parentContainer">
+        <!-- CONTAINER 1 -->
+        <div class="container">
+          <!-- TEXT -->
+          <div class="draggableItem" draggable="true">
+            <h2>Text 1</h2>
+            <p>This is my text 1</p>
+          </div>
+          <!-- IMAGE  -->
+          <div class="draggableItem" draggable="true">
+            <img src="./assets/image1.jpg" alt="Image 1" class="image" />
+          </div>
+          <!-- ICON  -->
+          <div class="draggableItem" draggable="true">
+            <i class="fas fa-star"></i>
+          </div>
+          <!-- TEXT  -->
+          <div class="draggableItem" draggable="true">
+            <h2>Text 2</h2>
+            <p>This is my text 2</p>
+          </div>
+          <!-- IMAGE  -->
+          <div class="draggableItem" draggable="true">
+            <img src="./assets/image2.jpg" alt="Image 2" class="image" />
+          </div>
+          <!-- ICON  -->
+          <div class="draggableItem" draggable="true">
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+        <!-- CONTAINER 2 -->
+        <div class="container"></div>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js" defer></script>
+</html>

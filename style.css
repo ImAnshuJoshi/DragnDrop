@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+}
+.wholeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+}
+.resetBtn {
+  margin: 1rem;
+  padding: 0.5rem;
+  background-color: #252525;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  border-radius: 0.2rem;
+}
+
+.parentContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.container {
+  background-color: #252525;
+  padding: 1rem;
+  margin-top: 1rem;
+  width: 30%;
+  /* min-height:200px; */
+  height: 400px;
+  overflow: auto;
+  border-radius: 0.2rem;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.draggableItem {
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid black;
+  cursor: move;
+  border-radius: 0.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .parentContainer {
+    flex-direction: column;
+  }
+
+  .container {
+    width: 90%;
+    min-height: 10px;
+    max-height: 400px;
+  }
+}
